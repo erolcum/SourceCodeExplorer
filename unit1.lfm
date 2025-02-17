@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 381
+  Height = 314
+  Top = 250
+  Width = 846
+  Caption = 'Source Code Explorer'
+  ClientHeight = 314
+  ClientWidth = 846
+  OnCreate = FormCreate
+  object ListBox: TListBox
+    Left = 8
+    Height = 232
+    Top = 72
+    Width = 832
+    ItemHeight = 0
+    TabOrder = 0
+    OnClick = ListBoxClick
+  end
+  object ButtonSearch: TButton
+    Left = 730
+    Height = 54
+    Top = 8
+    Width = 110
+    Caption = 'Search'
+    TabOrder = 1
+    OnClick = ButtonSearchClick
+  end
+  object EditSearch: TEdit
+    Left = 104
+    Height = 23
+    Top = 39
+    Width = 80
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 23
+    Height = 15
+    Top = 43
+    Width = 78
+    Caption = 'Text to search :'
+  end
+  object EditMask: TEdit
+    Left = 243
+    Height = 23
+    Top = 39
+    Width = 80
+    TabOrder = 3
+    Text = '*.pas'
+  end
+  object Label3: TLabel
+    Left = 206
+    Height = 15
+    Top = 43
+    Width = 34
+    Caption = 'Mask :'
+  end
+  object Label4: TLabel
+    Left = 11
+    Height = 15
+    Top = 12
+    Width = 90
+    Caption = 'Folder to search :'
+  end
+  object EditFolder: TEdit
+    Left = 105
+    Height = 23
+    Top = 8
+    Width = 336
+    TabOrder = 4
+    Text = 'C:\lazarus\examples'
+  end
+  object Label2: TLabel
+    Left = 520
+    Height = 1
+    Top = 43
+    Width = 1
+  end
+end
